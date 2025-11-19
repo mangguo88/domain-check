@@ -4,7 +4,7 @@ compatibility_date = "2025-11-17"
 keep_vars = true
 
 # KV 命名空间绑定 (必须)
-[[DOMAIN_KV]]  [[命名空间]]
+[[kv_DOMAIN_KV]]  [[命名空间]]
 binding = "DOMAIN_KV"   binding = "域名_KV"
 id = "78be3f233d674adabda703afb9589af6" # 替换成你实际的 KV ID
 
