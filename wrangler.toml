@@ -1,11 +1,13 @@
-name = "域名监控"    
+name = "domain-check"  name = "域名监控"
 main = "src/index.js"
-compatibility_date = "2025-11-17"  
+compatibility_date = "2025-11-17"
 keep_vars = true
 
-[[芒果的域名]]    
-binding = "DOMAIN_KV"   
-id = "78be3f233d674adabda703afb9589af6" # 替换成你实际的 KV ID                  
+# KV 命名空间绑定 (必须)
+[[芒果域名监控]]  [[命名空间]]
+binding = "DOMAIN_KV"   binding = "域名_KV"
+id = "78be3f233d674adabda703afb9589af6" # 替换成你实际的 KV ID
 
-[triggers]
+# Cron Triggers 定时任务
+[triggers]  [触发器]
 crons = ["0 1,13 * * *"] # 北京时间 9:00 和 21:00
